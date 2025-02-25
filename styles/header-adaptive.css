@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-container,
+    .wrapper,
+    .footer_container {
+        width: 95%;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    
+    .wrapper .container {
+        flex-direction: column;
+    }
+    
+    .wrapper .container aside,
+    .wrapper .container main {
+        width: 100%;
+    }
+    
+    .wrapper .container aside form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .wrapper .container main .image_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .wrapper .container main section {
+        width: 31%;
+        min-width: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .search-container {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .search-container form {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+    }
+    
+    .search-container input {
+        flex-grow: 1;
+        width: auto;
+    }
+    
+    menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    menu a {
+        padding: 10px 15px;
+    }
+    
+    .image-section .description {
+        width: 90%;
+    }
+    
+    .wrapper .container main .image_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .wrapper .container main section {
+        width: 90%;
+        max-width: 300px;
+        margin: 0 auto 20px;
+    }
+    
+    .wrapper .container main section > img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .wrapper .container main .list_container {
+        flex-direction: column;
+    }
+    
+    .wrapper .container main table {
+        width: 100%;
+        margin: 15px 0;
+        font-size: 12px;
+        overflow-x: auto;
+        display: block;
+    }
+    
+    .wrapper .container main th,
+    .wrapper .container main td {
+        padding: 8px 10px;
+    }
+    
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer_container .box {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    
+    .footer_container .box ul.cherry_hours li {
+        padding-left: 0;
+    }
+    
+    .footer_container .box ul.cherry_hours li::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-container h1 {
+        font-size: 24px;
+    }
+    
+    .image-section h1 {
+        font-size: 24px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin-bottom: 5px;
+    }
+    
+    nav li::after {
+        display: none;
+    }
+    
+    .wrapper {
+        padding-bottom: 30px;
+    }
+    
+    .wrapper .container aside form > input,
+    .wrapper .container aside form > select,
+    .wrapper .container aside form > button {
+        width: 100%;
+    }
+    
+    menu a {
+        width: 50%;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
